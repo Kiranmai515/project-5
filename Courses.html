@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Learn MERN</title>
+    <style>
+        /* General Styles */
+        body {
+            background-image: url("file:///C:/Users/91824/Desktop/pic.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(84, 13, 25);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #d6c7c7;
+            color: #333;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(98, 44, 44);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #ff5733;
+            transform: scale(1.1);
+        }
+
+        .courses-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-top: 70px; /* Adjust this value as needed */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .course-video {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .course-video h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .course-video p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .course-video video {
+            width: 100%;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Learn MERN</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Register.html">Registration</a></li>
+            <li><a href="courses.html">Courses</a></li>
+        </ul>
+    </nav>
+    <div class="courses-container">
+        <div class="course-video">
+            <h3>MongoDB</h3>
+            <p>Unleash the Power of NoSQL: MongoDB, a leading NoSQL database, redefines the paradigm of data storage. Gone are the days of rigid, tabular structures...</p>
+            <video controls>
+                <source src="file:///C:/Users/91824/Downloads/MongoDB%20in%20100%20Seconds.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="course-video">
+            <h3>Express</h3>
+            <p>Embark on the Express Journey: Express, the minimalist web framework for Node.js, serves as the backbone of our server-side architecture. With its streamlined design...</p>
+            <video controls>
+                <source src="file:///C:/Users/91824/Downloads/ssvid.net%20-%20Everything%20You%20Need%20to%20Know%20About%20Expressjs%20JavaScript%20Framework%20Explained%20in%203%20Minutes_480p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="course-video">
+            <h3>ReactJS</h3>
+            <p>Craft Dynamic User Interfaces: Enter the realm of ReactJS, the declarative and component-based library for building dynamic user interfaces. With React...</p>
+            <video controls>
+                <source src="file:///C:/Users/91824/Downloads/ssvid.net%20-%20Reactjs%20in%201%20minute_360p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="course-video">
+            <h3>NodeJS</h3>
+            <p>Elevate Your Backend Development: NodeJS, the JavaScript runtime environment, revolutionizes backend development with its non-blocking, event-driven architecture...</p>
+            <video controls>
+                <source src="file:///C:/Users/91824/Downloads/ssvid.net%20-%20What%20is%20Nodejs%20and%20how%20it%20works%20explained%20in%202%20minutes_480p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</body>
+</html>

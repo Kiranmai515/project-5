@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        h1 {
+            background-color: antiquewhite;
+            font-size: larger;
+            animation: fadeIn 2s;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            animation: colorChange 3s infinite;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        body {
+            background-image: url("file:///C:/Users/91824/Desktop/pics.jpg");
+            font-style: italic;
+            background-color: chocolate;
+            font-size: larger;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes colorChange {
+            0% { color: rgb(198, 40, 40); }
+            50% { color: rgb(146, 146, 39); }
+            100% { color: rgb(26, 53, 228); }
+        }
+        @keyframes slideIn {
+            from { margin-left: 100%; }
+            to { margin-left: 0%; }
+        }
+        .slideIn {
+            animation: slideIn 2s;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Register.html">Registration</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+
+        </ul>
+    </nav>
+    <center>
+        <h1>Welcome To Contact Us Page</h1>
+    </center>
+    <center>
+        <p class="slideIn">PACE ITS</p>
+        <h2 class="slideIn">Address:</h2>
+        <p class="slideIn">NEAR VALLURAMMA TEMPLE, ONGOLE-523272, Andhra Pradesh</p>
+        <p class="slideIn"><b>Office:</b> 8581324034</p>
+        <p class="slideIn"><b>Email:</b> pacetour@pace.ac.in</p>
+        <p class="slideIn">*For more information please contact us</p>
+        <a href="Register.html">Contact Us</a>
+    </center>
+</body>
+</html>
